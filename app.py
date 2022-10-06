@@ -26,7 +26,7 @@ def main():
 
 
 def predict_class(image):
-    class_mode = tf.keras.models.load_model('Tomato disease/Tomato disease.hdf5')
+    class_mode = tf.keras.models.load_model('Tomato disease1.hdf5')
     shape = ((180, 180, 3))
     model = tf.keras.Sequential(
         [hub.KerasLayer(class_mode, input_shape=shape)])  # type: ignore
