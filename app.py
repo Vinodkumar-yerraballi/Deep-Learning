@@ -1,7 +1,3 @@
-from ast import mod
-from email.mime import image
-from symbol import test
-from turtle import shape
 import streamlit as st
 from PIL import Image, ImageOps
 import matplotlib.pyplot as plt
@@ -14,6 +10,8 @@ from keras.utils import img_to_array
 import os
 import h5py
 
+
+st.title("The tomato disease classification")
 
 def main():
     file_upload = st.file_uploader("Choose image", type=['jpeg', 'jpg'])
